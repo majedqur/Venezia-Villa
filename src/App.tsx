@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageCircle, Phone, MapPin, Users, Clock, CheckCircle2, AlertCircle, ExternalLink, ChevronLeft, ChevronRight, Calendar, Banknote, ChevronDown, ChevronUp, Moon, Sun, Globe, Minus, Plus, Bed, Bath, Star, DoorOpen, Share2, Volume2, VolumeX, Play, Store, Utensils, Pill, Bell, Eye, X } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { motion, AnimatePresence, useInView, useScroll, useTransform } from 'motion/react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
@@ -1444,6 +1445,7 @@ export default function App() {
           )}
         </AnimatePresence>
       </div>
+      <Analytics />
     </div>
   );
 }
